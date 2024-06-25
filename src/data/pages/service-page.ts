@@ -8,6 +8,15 @@ const servicePage = {
     description: true,
   },
   servicesSection,
+  bottomFormSection: {
+    title: true,
+    subTitle: true,
+    steps: { item: true},
+  },
+  otherServicesSection: {
+    title: true,
+    otherServices: { title: true },
+  }
 
 } as const;
 
