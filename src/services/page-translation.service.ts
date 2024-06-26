@@ -1,4 +1,4 @@
-import { pageIdToTranslationKeys } from "../data/pages";
+import { pageIdToTranslationKeys } from "../translation-schemas/pages";
 import { PageTemplateId } from "../enums/enums";
 import { LandingPageContent, PageData } from "../types";
 import { isArray, isObject, isString } from "../utils/utils";
