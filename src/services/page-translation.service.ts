@@ -5,6 +5,7 @@ import { isArray, isObject, isString } from "../utils/utils";
 import fs from 'node:fs/promises';
 
 const internalKeys = ['__component', 'id', 'pageTemplateId'];
+const keepIdKeys = ['icon', 'image', 'logo'];
 
 class PageTranslationService {
  constructor () {
@@ -26,28 +27,33 @@ class PageTranslationService {
 
   switch (content.__component) {
     case PageTemplateId.SERVICE_PAGE:
-      return this.parseObject(landing, pageIdToTranslationKeys[PageTemplateId.SERVICE_PAGE]);
+      return this.parseObject({ data: landing, translationMap: pageIdToTranslationKeys[PageTemplateId.SERVICE_PAGE] });
     case PageTemplateId.TECHNOLOGY_PAGE:
-      return this.parseObject(landing, pageIdToTranslationKeys[PageTemplateId.TECHNOLOGY_PAGE]);
+      return this.parseObject({ data: landing, translationMap: pageIdToTranslationKeys[PageTemplateId.TECHNOLOGY_PAGE] });
     default:
       return landing;
   }
  }
 
- private parseObject = (data: object, translationMap: object) => {
+ private parseObject = ({ data, keepId = false, translationMap } : { data: object; translationMap?: object; keepId?: boolean}) => {
+  if (!keepId && 'id' in data) {
+    delete data.id;
+  }
+
   const result = {};
   for (const key in data) {
     if (internalKeys.includes(key)) {
       result[key] = data[key];
       continue;
-    };
+    }
 
     if (isString(data[key]) && translationMap[key]) {
       result[key] = this.translateText(data[key]);
       continue;
     }
+
     if (isObject(data[key]) && translationMap[key]) {
-      result[key] = this.parseObject(data[key], translationMap[key]);
+      result[key] = this.parseObject({ data: data[key], translationMap: translationMap[key], keepId: keepIdKeys.includes(key.toLowerCase())});
       continue;
     }
 
@@ -56,9 +62,9 @@ class PageTranslationService {
       continue;
     }
 
-    result[key] = data[key];
-
+    result[key] = this.removeIds({ data: data[key], keepId: keepIdKeys.includes(key.toLowerCase()) });
   }
+
   return result;
  }
 
@@ -70,7 +76,7 @@ class PageTranslationService {
       continue;
     }
     if (isObject(item)) {
-      result.push(this.parseObject(item, translationMap));
+      result.push(this.parseObject({ data: item, translationMap }));
       continue;
     }
 
@@ -82,6 +88,22 @@ class PageTranslationService {
   }
   return result;
  };
+
+ private removeIds = ({ data, keepId } : { data: unknown; keepId?: boolean}) => {
+    if (keepId) {
+      return data;
+    }
+
+    if (isArray(data)) {
+      return data.map((item) => this.removeIds({ data: item }));
+    }
+
+    if (isObject(data)) {
+      return this.parseObject({ data, translationMap: {}, keepId });
+    }
+
+    return data;
+ }
 
  private translateText = (text: string) => '[==] Yay! Translated [==]';
 }
