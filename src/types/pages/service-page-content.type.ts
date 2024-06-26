@@ -7,6 +7,6 @@ type ServicePageContent = {
   __component: PageTemplateId.SERVICE_PAGE;
   meta: PageMeta;
   servicesSection: ServicesSection;
-}
+};
 
 export { ServicePageContent };

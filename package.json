@@ -8,7 +8,8 @@
     "build": "npx tsc",
     "start": "npm run build && node dist/index.js",
     "start:service": "npm run start -- --service",
-    "start:technology": "npm run start -- --technology"
+    "start:technology": "npm run start -- --technology",
+    "start:developers": "npm run start -- --developers"
   },
   "keywords": [],
   "author": "",

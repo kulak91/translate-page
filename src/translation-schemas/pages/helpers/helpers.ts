@@ -1,1 +1,1 @@
-export { generateTranslationSchema } from './generate-translation-schema.helper';
+export { generateTranslationSchema } from "./generate-translation-schema.helper";
