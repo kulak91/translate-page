@@ -53,7 +53,7 @@ class PageTranslationService {
     }
 
     if (isObject(data[key]) && translationMap[key]) {
-      result[key] = this.parseObject({ data: data[key], translationMap: translationMap[key], keepId: keepIdKeys.includes(key)});
+      result[key] = this.parseObject({ data: data[key], translationMap: translationMap[key], keepId: keepIdKeys.includes(key.toLowerCase())});
       continue;
     }
 
@@ -62,7 +62,7 @@ class PageTranslationService {
       continue;
     }
 
-    result[key] = this.removeIds({ data: data[key], keepId: keepIdKeys.includes(key) });
+    result[key] = this.removeIds({ data: data[key], keepId: keepIdKeys.includes(key.toLowerCase()) });
   }
 
   return result;
