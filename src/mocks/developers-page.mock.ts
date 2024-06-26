@@ -8,538 +8,597 @@ const mockDevelopersPage = {
     },
     content: [
       {
-        id: 18,
+        id: 3,
         __component: "shared.developers-page",
         pageTemplateId: "developers",
         meta: {
-          id: 38,
-          title: "Expert Programming Services for Business Growth",
+          id: 258,
+          title: "Hire Dedicated Node.js Developers | Binary Studio",
           description:
-            "We are your end-to-end programming services company, specializing in building custom web, mobile, and cloud-based apps to deliver quality results on budget and schedule.",
-          keywords:
-            "programming services\nsoftware programming services\nprogramming service\ncustom programming service\ncustom programming services\n",
-          noindex: null,
-          nofollow: null,
+            "Hire dedicated Node.js developers from Binary Studio ☑️ Expertise in scalable and high-performance apps ☑️ Trust our reliable dedicated Node.js developers",
+          keywords: "key",
+          noindex: false,
+          nofollow: false,
           preloadImage: {
             data: null,
           },
         },
-        welcomeSection: {
-          id: 18,
-          postwelcomeSubtitle:
-            "Our experienced programming team helps startups and established companies succeed in the digital world. We provide customized services to modernize systems, build platforms, and integrate technologies. This tailors solutions to each client's specific goals.\nIt also positions them to thrive with leading tech capabilities. We empower businesses to adapt and drive growth today and into the future.",
-          addWelcomeButton: true,
-          welcomeImage: {
-            data: {
-              id: 1082,
-              attributes: {
-                name: "NodeJS-Development-Services.png",
-                url: "https://binary-studio-bucket.s3.amazonaws.com/Node_JS_Development_Services_d5f9de6ffb.png",
-              },
-            },
-          },
-          webView: {
-            id: 19,
-            firstLine: "Expert Programming",
-            secondLine: {
-              id: 36,
-              word: "Services for",
-              caseStudies: true,
-              exceptional: null,
-            },
-            thirdLine: {
-              id: 37,
-              word: "Business Growth",
-              caseStudies: false,
-              exceptional: {
-                id: 20,
-                enable: true,
-                size: "large",
-              },
-            },
-          },
-          mobileView: null,
-        },
         servicesSection: {
-          id: 18,
-          title: "Our Software Programming Services",
+          id: 290,
+          title: "Services offered by Binary Studio",
+          priority: 0,
+          block: "ladingBasic",
+          sectionType: "Black",
+          hasIcons: true,
           terms: [
             {
-              id: 293,
-              title: "Product Development",
+              id: 1348,
+              title: "Custom software development",
               link: null,
               subTitle: null,
               description:
-                "We handle everything from requirements gathering to deployment and maintenance. As your one-stop development shop, we build fully customized systems tailored to your exact business needs.",
+                "Leverage our expertise to get a quick software product launch with efficient custom MVP development. We can help you get your solution to the market within the shortest time and gain a competitive edge.\n",
               callToAction: null,
               heading: true,
               icon: {
                 data: {
-                  id: 1091,
+                  id: 1315,
                   attributes: {
-                    name: "real-estate-management-software.svg",
-                    url: "https://binary-studio-bucket.s3.amazonaws.com/screen_2a3e3e07e6.svg",
+                    name: "custom-software-development-2.svg",
+                    url: "https://binary-studio-bucket.s3.amazonaws.com/web_service_6_4cee41287f.svg",
                   },
                 },
               },
             },
             {
-              id: 294,
-              title: "SaaS Development",
+              id: 1349,
+              title: "Mobile app development",
               link: null,
               subTitle: null,
               description:
-                "Free yourself from complex software management with efficient SaaS solutions. Our certified experts design secure, scalable SaaS products that drive growth.",
+                "Our skilled developers specialize in creating user-centric mobile apps that deliver exceptional experiences. At Binary Studio, our approach to mobile app development is comprehensive and tailored to meet the unique needs of each client.\n",
               callToAction: null,
               heading: true,
               icon: {
                 data: {
-                  id: 1138,
+                  id: 1152,
                   attributes: {
-                    name: "cloud-stack.svg",
-                    url: "https://binary-studio-bucket.s3.amazonaws.com/cloud_ec499d7e10.svg",
+                    name: "mobile-service-3.svg",
+                    url: "https://binary-studio-bucket.s3.amazonaws.com/mobile_da843e3091.svg",
                   },
                 },
               },
             },
             {
-              id: 295,
-              title: "UI/UX Design",
+              id: 1352,
+              title: "Web app development",
               link: null,
               subTitle: null,
               description:
-                "Entice users with sleek, intuitive interfaces that delight at every touchpoint. Our user-centered designs boost satisfaction and engagement across all platforms.",
+                "At Binary Studio, our web app development services are designed to deliver high-performance, secure, and user-friendly apps that drive business growth. We boast successful web application projects across various industries.\n",
               callToAction: null,
               heading: true,
               icon: {
                 data: {
-                  id: 1148,
+                  id: 1426,
                   attributes: {
-                    name: "dedicated-development-teams-1.svg",
-                    url: "https://binary-studio-bucket.s3.amazonaws.com/idea_fc677abba6.svg",
+                    name: "web-development-01.svg",
+                    url: "https://binary-studio-bucket.s3.amazonaws.com/web_development_01_15e4c577c4.svg",
                   },
                 },
               },
             },
             {
-              id: 296,
-              title: "AR Development",
+              id: 1350,
+              title: "ERP software development",
               link: null,
               subTitle: null,
               description:
-                "Bring your AR visions to life with fully responsive and optimized apps. Our AR experts craft immersive experiences that exceed user expectations and industry standards.\nWith over 15 years of experience, we provide leading-edge software services that position businesses for digital success. Transform with custom-fit solutions made just for you.\n",
+                "Get our expertise in ERP software development to streamline your business processes and enhance operational efficiency. At Binary Studio, dedicated developers build custom ERP solutions that integrate various functions into a single, cohesive system, driving better decision-making and productivity.\n",
               callToAction: null,
               heading: true,
               icon: {
                 data: {
-                  id: 1135,
+                  id: 1391,
                   attributes: {
-                    name: "qa-functional-testing.svg",
-                    url: "https://binary-studio-bucket.s3.amazonaws.com/all_directions_d825a7d490.svg",
+                    name: "erp-development-01.svg",
+                    url: "https://binary-studio-bucket.s3.amazonaws.com/erp_development_01_49d354702d.svg",
                   },
                 },
               },
             },
             {
-              id: 297,
-              title: "Web Applications",
+              id: 1351,
+              title: "API development",
               link: null,
               subTitle: null,
               description:
-                "We craft industry-specific web apps that accelerate B2B and B2C success. Our tailored solutions bring measurable results.",
+                "We specialize in developing robust APIs that can be integrated between different software systems. Our APIs are designed to enhance functionality, improve communication, and ensure smooth data exchange within your business ecosystem.\n",
               callToAction: null,
               heading: true,
               icon: {
                 data: {
-                  id: 1085,
+                  id: 1379,
                   attributes: {
-                    name: "web-service-4.svg",
-                    url: "https://binary-studio-bucket.s3.amazonaws.com/service_2_851ca38fe6.svg",
+                    name: "api-development-01.svg",
+                    url: "https://binary-studio-bucket.s3.amazonaws.com/api_development_01_2e6313e727.svg",
                   },
                 },
               },
             },
             {
-              id: 298,
-              title: "Mobile Applications",
+              id: 1353,
+              title: "Cloud app development",
               link: null,
               subTitle: null,
               description:
-                "We turn ideas into top-rated mobile apps users love. As your trusted development partner, we handle everything from ideation to launch.",
+                "Unlock exceptional speed and flexibility in your operations with our cloud application development services. At Binary Studio, dedicated developers design cloud-based apps from scratch or modernize existing apps, ensuring they meet the highest standards of quality and efficiency. \n",
               callToAction: null,
               heading: true,
               icon: {
                 data: {
-                  id: 1151,
+                  id: 1376,
                   attributes: {
-                    name: "mobile-service-1.svg",
-                    url: "https://binary-studio-bucket.s3.amazonaws.com/mobile_dev_stack_06f4b197a7.svg",
+                    name: "cloud-application-development-01.svg",
+                    url: "https://binary-studio-bucket.s3.amazonaws.com/cloud_application_development_01_c8c804d269.svg",
                   },
                 },
               },
-            },
-            {
-              id: 299,
-              title: "Desktop Applications",
-              link: null,
-              subTitle: null,
-              description:
-                "Get specialized native or cross-platform desktop software made for your exact needs. Our expert developers optimize functionality across Windows, Mac and Linux.",
-              callToAction: null,
-              heading: true,
-              icon: {
-                data: {
-                  id: 1146,
-                  attributes: {
-                    name: "web-service-1.svg",
-                    url: "https://binary-studio-bucket.s3.amazonaws.com/frontend_stack_94c46883d9.svg",
-                  },
-                },
-              },
-            },
-            {
-              id: 300,
-              title: "AI and Data Science",
-              link: null,
-              subTitle: null,
-              description:
-                "Build AI-powered tools that enable better decisions. Our data experts create forward-thinking solutions.",
-              callToAction: null,
-              heading: true,
-              icon: {
-                data: {
-                  id: 1134,
-                  attributes: {
-                    name: "ai-ml-stack.svg",
-                    url: "https://binary-studio-bucket.s3.amazonaws.com/ai_stack_75c3685a2c.svg",
-                  },
-                },
-              },
-            },
-            {
-              id: 301,
-              title: "Legacy System Upgrades",
-              link: null,
-              subTitle: null,
-              description:
-                "Retain your data while integrating the latest innovations. We smoothly upgrade systems with no disruption.",
-              callToAction: null,
-              heading: true,
-              icon: {
-                data: {
-                  id: 1100,
-                  attributes: {
-                    name: "basic-direct-communication.svg",
-                    url: "https://binary-studio-bucket.s3.amazonaws.com/direct_95130d99a2.svg",
-                  },
-                },
-              },
-            },
-            {
-              id: 302,
-              title: "DevOps Services",
-              link: null,
-              subTitle: null,
-              description:
-                "Strengthen architecture, enhance security and speed up software releases through expert DevOps.",
-              callToAction: null,
-              heading: true,
-              icon: {
-                data: {
-                  id: 1150,
-                  attributes: {
-                    name: "qa-automation-testing.svg",
-                    url: "https://binary-studio-bucket.s3.amazonaws.com/loop_f9710cbcc2.svg",
-                  },
-                },
-              },
-            },
-            {
-              id: 303,
-              title: "Chatbots and Metaverse",
-              link: null,
-              subTitle: null,
-              description:
-                "Elevate customer experience with human-like chatbots. Visualize data and train teams through custom metaverse builds.",
-              callToAction: null,
-              heading: true,
-              icon: {
-                data: {
-                  id: 1156,
-                  attributes: {
-                    name: "pm-resource-management.svg",
-                    url: "https://binary-studio-bucket.s3.amazonaws.com/resource_management_73af1d193b.svg",
-                  },
-                },
-              },
-            },
-          ],
-        },
-        benefitsSection: {
-          id: 18,
-          title: "Why Outsource Custom Programming Services",
-          terms: [
-            {
-              id: 304,
-              title: "Access to Global Talent and Expertise",
-              subTitle: null,
-              description:
-                "Outsourcing allows you to leverage talent from around the world with niche skills that may be hard to find locally. This gives you access to experts that can provide innovative solutions.",
-              callToAction: null,
-              heading: true,
-              link: null,
-            },
-            {
-              id: 305,
-              title: "Increased Efficiency",
-              subTitle: null,
-              description:
-                "Experienced offshore teams allow you to scale development faster and at lower costs compared to hiring in-house. This speeds up time-to-market.",
-              callToAction: null,
-              heading: true,
-              link: null,
-            },
-            {
-              id: 306,
-              title: "Focus on Core Business",
-              subTitle: null,
-              description:
-                "Frees you to focus energy and resources on key business areas vs complex software development and maintenance.",
-              callToAction: null,
-              heading: true,
-              link: null,
-            },
-            {
-              id: 307,
-              title: "Flexibility & Scalability",
-              subTitle: null,
-              description:
-                "Outsourcing provides flexibility to scale up or down based on business needs. This provides the ability to pilot ideas without huge upfront investment.",
-              callToAction: null,
-              heading: true,
-              link: null,
-            },
-            {
-              id: 308,
-              title: "Latest Technologies & Methodologies",
-              subTitle: null,
-              description:
-                "Outsourcing firms invest in the latest tech like AI, blockchain, IoT etc. This enables building software with latest innovations vs reliance on in-house skills alone.",
-              callToAction: null,
-              heading: true,
-              link: null,
-            },
-            {
-              id: 309,
-              title: "Reduced Time to Market",
-              subTitle: null,
-              description:
-                "Turnkey expertise and managed offshore teams enable bringing products to market much faster than solo in-house development.",
-              callToAction: null,
-              heading: true,
-              link: null,
             },
           ],
         },
         whyBinarianSection: {
-          id: 18,
-          title: "Why Choose us for Programming Services",
-          points: [
-            {
-              id: 113,
-              title: "Defect-Free Products",
-              heading: true,
-              para: "Quality assurance through rigorous testing and extensive support post-deployment.",
-            },
-            {
-              id: 115,
-              title: "On-Schedule Completion",
-              heading: true,
-              para: "Precise estimations and timeline tracking for punctual, reliable delivery.",
-            },
-            {
-              id: 117,
-              title: "Swift Scaling",
-              heading: true,
-              para: "Expert teams sized precisely to scope, onboarded swiftly even under tight timeframes.",
-            },
-            {
-              id: 114,
-              title: "Efficiency-Driving Process",
-              heading: true,
-              para: "Proven development methodology fine-tuned for smooth execution.",
-            },
-            {
-              id: 116,
-              title: "Iterative Approach",
-              heading: true,
-              para: "Creating minimum viable versions first for proof-of-concept and validation.",
-            },
-            {
-              id: 118,
-              title: "Strategic Guidance",
-              heading: true,
-              para: "Aligning technical execution to business objectives for optimized outcomes.",
-            },
-          ],
-        },
-        developmentSection: {
-          id: 18,
-          image: {
-            data: {
-              id: 1083,
-              attributes: {
-                name: "why-flutter.png",
-                url: "https://binary-studio-bucket.s3.amazonaws.com/why_flutter_1ae6e02d93.png",
-              },
-            },
-          },
-          points: {
-            id: 112,
-            title: "Award-Winning Custom Programming Service",
-            para: "At Binary Studio, our talented programmers build bespoke solutions tailored to your business needs. With over 19 years perfecting our craft, we have the expertise to bring your vision to life through robust and intuitive software.\nOur collaborative ethos ensures transparency at every step, while our drive for innovation empowers us to engineer cutting-edge products that help organizations achieve their goals.\nWhether you're a startup seeking an MVP or an enterprise requiring complex integrations, our customer-centric approach means we treat your project as our own - from ideation to launch and beyond. Our proven track record stands testament to our commitment to delivering excellence.",
-          },
-        },
-        hiringProcessSection: {
-          id: 18,
-          title: "Getting Started with Us",
-          isVerticalView: true,
+          id: 289,
+          title: "Why Choose Binary Studio?",
+          priority: 0,
+          block: "ladingBasic",
+          sectionType: "White",
+          hasIcons: false,
           terms: [
             {
-              id: 310,
-              title: "Step",
-              subTitle: "Right Now:",
+              id: 1342,
+              title: "Top-tier talent",
+              subTitle: null,
               description:
-                'Tell us about your project needs by clicking "Send." We want to hear from you.',
+                "Through our rigorous training program, which attracts over 15,000 applicants annually, we carefully choose only the best 0.5% of graduates to join the Binary Studio team.\n",
               callToAction: null,
-              heading: false,
-              icon: {
-                data: {
-                  id: 1153,
-                  attributes: {
-                    name: "qa-manual-testing.svg",
-                    url: "https://binary-studio-bucket.s3.amazonaws.com/mouse_arrow_aeb5dea74a.svg",
-                  },
-                },
-              },
+              heading: true,
+              link: null,
             },
             {
-              id: 311,
-              title: "Step",
-              subTitle: "Within 24 Hours:",
+              id: 1343,
+              title: "Reliable partnership",
+              subTitle: null,
               description:
-                "Expect a phone call or email from our team to discuss your project and needs in more detail. We'll help determine scope and planning.",
+                "We build strong relationships with our clients - our average partnership lasts more than 3.5 years, whereas some of our partners have been with us for over 15 years now.\n",
               callToAction: null,
-              heading: false,
-              icon: {
-                data: {
-                  id: 1108,
-                  attributes: {
-                    name: "basic-step-comunication.svg",
-                    url: "https://binary-studio-bucket.s3.amazonaws.com/phone_8cbf31a7f4.svg",
-                  },
-                },
-              },
+              heading: true,
+              link: null,
             },
             {
-              id: 312,
-              title: "Step",
-              subTitle: "Within 1 Week:",
+              id: 1344,
+              title: "Quick launch",
+              subTitle: null,
               description:
-                "We'll send our master service agreement to formalize our partnership. We'll also allocate the perfect development team for you.",
+                'Our "Inception" program can kickstart your project within 2 weeks. During this time, we define tech requirements, create a comprehensive roadmap, and assemble a team.\n',
               callToAction: null,
-              heading: false,
-              icon: {
-                data: {
-                  id: 1213,
-                  attributes: {
-                    name: "basic-requirements-gathering.svg",
-                    url: "https://binary-studio-bucket.s3.amazonaws.com/check_list_744c56564f.svg",
-                  },
-                },
-              },
+              heading: true,
+              link: null,
             },
             {
-              id: 313,
-              title: "Step",
-              subTitle: "Within 10 Days:",
+              id: 1345,
+              title: "Proven expertise",
+              subTitle: null,
               description:
-                "We'll schedule kickoff meetings to prioritize features, set milestones, and agree on communication cadences.",
+                "Binary Studio team has AWS and Microsoft certified experts who continually enhance their skills to implement the best practices in your product.\n",
               callToAction: null,
-              heading: false,
-              icon: {
-                data: {
-                  id: 1109,
-                  attributes: {
-                    name: "basic-kick-off.svg",
-                    url: "https://binary-studio-bucket.s3.amazonaws.com/kick_off_5fc36bd1c1.svg",
-                  },
-                },
-              },
+              heading: true,
+              link: null,
             },
             {
-              id: 314,
-              title: "Step",
-              subTitle: "Within 1 Month:",
+              id: 1347,
+              title: "Software product discovery ",
+              subTitle: null,
               description:
-                "The hard work pays off - you'll start seeing tangible results and new features built specific to your needs. We work quickly to deliver ongoing value.",
+                "We can help you understand the market, align your products with user needs, and strategically plan the development process.\n",
               callToAction: null,
-              heading: false,
-              icon: {
-                data: {
-                  id: 1088,
-                  attributes: {
-                    name: "basic-hire-step-1.svg",
-                    url: "https://binary-studio-bucket.s3.amazonaws.com/step_1_b97757c7fd.svg",
-                  },
-                },
-              },
+              heading: true,
+              link: null,
+            },
+            {
+              id: 1346,
+              title: "Seamless integration",
+              subTitle: null,
+              description:
+                "Our Node.js developers seamlessly integrate into your existing team and business processes to ensure the project progresses efficiently.\n",
+              callToAction: null,
+              heading: true,
+              link: null,
             },
           ],
         },
         questionsSection: {
-          id: 18,
-          title: "Programming Services FAQ’s ",
-          priority: null,
-          block: null,
+          id: 236,
+          title: "FAQ",
+          priority: 0,
+          block: "questions",
           questionsLeft: [
             {
-              id: 153,
-              name: "What types of services can I outsource? ",
+              id: 1116,
+              name: "What services do your Node.js developers offer?",
               answer:
-                "You can outsource a wide range of programming services - anything from building an app, website, custom software, databases, analytics, QA testing, and more. We provide full-cycle development tailored to your business.",
+                "Our dedicated Node.js developers provide custom software development, API integration, real-time app development, and more services to deliver robust and scalable solutions that will meet your business needs.",
             },
             {
-              id: 154,
-              name: "Will my intellectual property be protected?",
+              id: 1114,
+              name: "How experienced are your Node.js developers?",
               answer:
-                "Yes, we always protect your IP and sign NDAs. We treat your product as if it were our own. Your codebase and data remains entirely yours.",
+                "Our Node.js developers are highly experienced, having worked on numerous complex projects across various industries. They undergo rigorous training and are among the top 0.5% of 15,000 applicants who join our program annually.",
             },
             {
-              id: 155,
-              name: "How do you ensure quality with outsourced work?",
+              id: 1113,
+              name: "Can I hire dedicated Node.js developers company?",
               answer:
-                "We leverage proven processes - code reviews, unit testing, CI/CD integrations - to ensure bug-free development that meets industry coding standards. Our QA team also provides multi-level testing.",
+                "Yes, you can hire dedicated Node.js development team by Binary Studio that will work exclusively on your project. So, if you want to hire dedicated Node.js developers, contact us and we will assemble the skilled team for you.",
+            },
+            {
+              id: 1115,
+              name: "How do you ensure the expertise of your dedicated Node.js developers?",
+              answer:
+                "We maintain high standards through continuous training. Our developers obtain AWS and Microsoft Gold certifications, conduct internal lectures, and hold knowledge-sharing sessions within our Academy. We are confident that our Node.js developers are among the best in the industry.",
+            },
+            {
+              id: 1112,
+              name: "What if I need to scale my team?",
+              answer:
+                "Binary Studio offers flexible scaling options. You can easily scale your team up or down based on your business requirements. Optimal resource utilization of our developers is guaranteed.\n",
             },
           ],
           questionsRight: [
             {
-              id: 156,
-              name: "What communication/collaboration tools do you use?",
+              id: 1117,
+              name: "What does the hiring process look like?",
               answer:
-                "We extensively use Asana, Slack, Zoom and other leading tools enabling clear requirements gathering, daily stand ups, sprint demos, persistent chat, and more.",
+                "Our hiring process is very easy, quick, transparent, and tailored to your needs. We begin by getting accustomed to your requirements. Then, we select the most suitable developers for your project and, after your approval, onboard them.",
             },
             {
-              id: 157,
-              name: "How can I be assured my deadlines will be met?",
+              id: 1118,
+              name: "How quickly can Node.js developers start?",
               answer:
-                "We put disciplined project management processes in place from the start, including activity scheduling, resource allocation, and continuous timeline tracking. Any issues get flagged early, allowing time to calibrate. We're accountable to agreed deliverable dates.",
+                "By partnering with our dedicated Node.js development company, you get a swift start.  We offer pre-vetted candidates just within 2-4 weeks. ",
             },
             {
-              id: 158,
-              name: "How can I get started?",
+              id: 1119,
+              name: "Do your Node.js developers work in my time zone?",
               answer:
-                'First, tell us about your project needs by clicking "Send." From there our team will be in touch within 24 hours to explore further and hit the ground running.',
+                "Our dedicated Node.js developers are remote, flexible and can adjust to your time zone to deliver seamless communication and collaboration throughout the whole project lifecycle.",
+            },
+            {
+              id: 1120,
+              name: "How do you handle project management?",
+              answer:
+                "Our dedicated teams integrate into your workflow and use agile methodologies, ensuring efficient project management, timely delivery, and transparent communication. Take note that we have our own PMO office and can assign a dedicated PM for your project.",
+            },
+            {
+              id: 1121,
+              name: "What support do you provide after completion?",
+              answer:
+                "We provide ongoing support, enhancements, and maintenance to ensure your Node.js app runs smoothly and delivers an exceptional user experience. Our commitment to your success extends beyond project completion. \n",
+            },
+          ],
+        },
+        welcomeFormSection: {
+          id: 227,
+          firstLine: "Hire",
+          fourthLine: "Developers",
+          postwelcomeSubtitle:
+            "Binary Studio offers top 0.5% Node.js developers to enable businesses to engineer efficient digital solutions.",
+          formTitle:
+            "Get in touch with us to hire dedicated Node.js developers who will help create cost-effective digital solutions. ",
+          includeLogos: true,
+          secondLine: {
+            id: 485,
+            word: "Dedicated",
+            caseStudies: true,
+            exceptional: null,
+          },
+          thirdLine: {
+            id: 486,
+            word: "Node.js",
+            caseStudies: true,
+            exceptional: {
+              id: 37,
+              enable: true,
+              size: "medium",
+            },
+          },
+        },
+        callToActionTop: {
+          id: 54,
+          title: "Find your ideal dedicated Node.js developers",
+          subTitle: "Hire the best specialists to drive your project forward",
+          buttonText: "Get a free consultation now!",
+          sectionType: "White",
+          priority: 0,
+          block: "callToAction",
+        },
+        caseStudiesSection: {
+          id: 30,
+          title: "Related Case Studies",
+          subTitle: null,
+          block: "caseStudies",
+          priority: 0,
+          sectionType: "Grey",
+          cases: [
+            {
+              id: 90,
+              caseName: "br-paving",
+              title:
+                "Transforming an Internal CRM App into a Leading ERP System",
+              description:
+                "Binary Studio developed a comprehensive software solution for BR Paving that enhanced their project management, improved operational efficiency, and increased communication across teams and contractors.",
+              imgAlt: "dedicated node.js developers",
+              image: {
+                data: {
+                  id: 1281,
+                  attributes: {
+                    name: "br-paving.jpg",
+                    url: "https://binary-studio-bucket.s3.amazonaws.com/br_paving_1087500307.jpg",
+                  },
+                },
+              },
+            },
+            {
+              id: 89,
+              caseName: "hackolade",
+              title: "Offering a New Approach to Structured Data",
+              description:
+                "We created a user-friendly app for Hackolade that facilitated database modeling for NoSQL and multi-model databases. The results? Improved user productivity and better data management.",
+              imgAlt: "hire dedicated node.js developers",
+              image: {
+                data: {
+                  id: 1290,
+                  attributes: {
+                    name: "hackolade.jpg",
+                    url: "https://binary-studio-bucket.s3.amazonaws.com/hackolade_3fd2fb7f11.jpg",
+                  },
+                },
+              },
+            },
+            {
+              id: 88,
+              caseName: "insideout-digital-therapeutics-platform",
+              title: "Modernizing a World-first Digital Therapeutics Platform",
+              description:
+                "Our dedicated developers created a unique digital therapeutics platform for InsideOut that provides patients with personalized, accessible mental healthcare solutions and empowers healthcare providers with advanced treatment management tools.",
+              imgAlt: "dedicated node.js developers for hire",
+              image: {
+                data: {
+                  id: 1293,
+                  attributes: {
+                    name: "insideout.jpg",
+                    url: "https://binary-studio-bucket.s3.amazonaws.com/insideout_a13c538123.jpg",
+                  },
+                },
+              },
+            },
+          ],
+        },
+        callToActionBottom: {
+          id: 55,
+          title: "Boost your solution with Node.js",
+          subTitle: "Connect with our top developers today",
+          buttonText: "Schedule a quick call!",
+          sectionType: "Black",
+          priority: 0,
+          block: "callToAction",
+        },
+        videosSection: {
+          id: 223,
+          priority: 0,
+          block: "videos",
+          title: "What our clients say",
+        },
+        clutchSection: {
+          id: 223,
+          priority: 0,
+          block: "clutch",
+        },
+        bottomFormSection: {
+          id: 220,
+          priority: 0,
+          block: "bottomForm",
+          title: "Ready to hire dedicated Node.js developers? Let's chat!",
+          subTitle:
+            "Contact us to discuss your project and we will match you with the top 0.5% tech talent. Let’s schedule a call and discuss:",
+          steps: [
+            {
+              id: 660,
+              item: "Your technical and management needs and challenges",
+            },
+            {
+              id: 658,
+              item: "Hard and soft skills you are looking for ",
+            },
+            {
+              id: 659,
+              item: "Agree on the staffing timeline and budget",
+            },
+          ],
+        },
+        customTextSection: null,
+        hiringStepsSection: {
+          id: 3,
+          title: "Hire Dedicated Node.js developers in 4 steps",
+          priority: 0,
+          block: "hiringSteps",
+          steps: [
+            {
+              id: 9,
+              title: "Define your requirements",
+              text: "Share your requirements or your project vision with us to let us find dedicated Node.js developers for your needs.",
+              icon: {
+                data: {
+                  id: 1645,
+                  attributes: {
+                    name: "step-1.svg",
+                    url: "https://binary-studio-bucket.s3.amazonaws.com/step_1_872dca213c.svg",
+                  },
+                },
+              },
+            },
+            {
+              id: 10,
+              title: "Quickly connect with top developers",
+              text: "Based on your specific requirements, we offer carefully selected, pre-vetted candidates for your consideration within 2-3 weeks.",
+              icon: {
+                data: {
+                  id: 1644,
+                  attributes: {
+                    name: "step-2.svg",
+                    url: "https://binary-studio-bucket.s3.amazonaws.com/step_2_90089c300c.svg",
+                  },
+                },
+              },
+            },
+            {
+              id: 11,
+              title: "Find the perfect match through the interview",
+              text: "Once you select the dedicated Node.js developers who meet your requirements, we arrange personal interviews with them.",
+              icon: {
+                data: {
+                  id: 1643,
+                  attributes: {
+                    name: "step-3.svg",
+                    url: "https://binary-studio-bucket.s3.amazonaws.com/step_3_7d523e3e8a.svg",
+                  },
+                },
+              },
+            },
+            {
+              id: 12,
+              title: "We’ll take care of the rest",
+              text: "\nHire dedicated Node.js developer with ease",
+              icon: {
+                data: {
+                  id: 1646,
+                  attributes: {
+                    name: "step-4.svg",
+                    url: "https://binary-studio-bucket.s3.amazonaws.com/step_4_f0800fa61a.svg",
+                  },
+                },
+              },
+            },
+          ],
+        },
+        developersLinksSection: {
+          id: 9,
+          title: "title",
+          subtitle: "sub",
+          priority: 0,
+          block: "developersLinks",
+          devLinks: [
+            {
+              id: 9,
+              category: "Frontend",
+              links: [
+                {
+                  id: 9,
+                  title: "CSS",
+                  link: "/",
+                },
+                {
+                  id: 10,
+                  title: "HTML",
+                  link: "/",
+                },
+              ],
+            },
+          ],
+        },
+        techStackSection: {
+          id: 9,
+          title: "title",
+          priority: 0,
+          block: "technologyStackLinks",
+          technologyCategories: [
+            {
+              id: 9,
+              category: "Backend",
+              technologies: [
+                {
+                  id: 30,
+                  title: "Node.js",
+                  link: "/",
+                },
+                {
+                  id: 31,
+                  title: "Laravel",
+                  link: "/",
+                },
+              ],
+            },
+          ],
+        },
+        devSliderSection: {
+          id: 3,
+          title: "Our dedicated Node.js developers",
+          priority: 0,
+          block: "devSlider",
+          developers: [
+            {
+              id: 7,
+              name: "Vlad Zubko",
+              position: "Dedicated Node.js developer",
+            },
+            {
+              id: 8,
+              name: "Dima Kulakov",
+              position: "Dedicated Node.js developer",
+            },
+            {
+              id: 9,
+              name: "Nickolay Grechkin",
+              position: "Dedicated Node.js developer",
+            },
+            {
+              id: 10,
+              name: "Alina Kupchyk",
+              position: "Dedicated Node.js developer",
+            },
+            {
+              id: 11,
+              name: "Oleksandra Masiuk",
+              position: "Dedicated Node.js developer",
+            },
+            {
+              id: 12,
+              name: "Josuer Bague",
+              position: "Dedicated Node.js developer",
+            },
+          ],
+        },
+        articlesSection: {
+          id: 2,
+          title: "title",
+          subtitle: "sub title",
+          priority: 0,
+          block: "articles",
+          articles: null,
+          articleList: [
+            {
+              id: 2,
+              article_id: "241",
+              title: "Tips for Accurate Software Cost Estimations",
+              image: {
+                data: {
+                  id: 1695,
+                  attributes: {
+                    name: "top_clutch.co_app_development_company_legal_2024.png",
+                    url: "/uploads/top_clutch_co_app_development_company_legal_2024_18263d0106.png",
+                  },
+                },
+              },
             },
           ],
         },

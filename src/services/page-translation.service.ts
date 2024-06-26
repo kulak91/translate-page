@@ -3,25 +3,30 @@ import { PageTemplateId } from "../enums/enums";
 import { PageData } from "../types";
 import { isArray, isObject, isString } from "../utils/utils";
 import fs from "node:fs/promises";
+import { DeepLTranslator } from "./deepl-translator.service";
 
 const internalKeys = ["__component", "id", "pageTemplateId"];
 const keepIdKeys = ["icon", "image", "logo"];
 
 class PageTranslationService {
-  constructor() {}
+  private translator: DeepLTranslator;
 
-  public generateTranslation(landing: PageData) {
-    const output = this.parsePage(landing);
+  constructor(deeplApiKey: string) {
+    this.translator = new DeepLTranslator(deeplApiKey);
+  }
+
+  public async generateTranslation(landing: PageData) {
+    const output = await this.parsePage(landing);
 
     const jsonData = JSON.stringify(output, null, 4);
 
     const content = landing.attributes.content[0];
 
     const filePath = `./output-${content.__component}.json`;
-    fs.writeFile(filePath, jsonData, { encoding: "utf-8" });
+    await fs.writeFile(filePath, jsonData, { encoding: "utf-8" });
   }
 
-  private parsePage(landing: PageData) {
+  private async parsePage(landing: PageData) {
     const content = landing.attributes.content[0];
 
     switch (content.__component) {
@@ -47,7 +52,7 @@ class PageTranslationService {
     }
   }
 
-  private parseObject = ({
+  private async parseObject({
     data,
     keepId = false,
     translationMap,
@@ -55,12 +60,12 @@ class PageTranslationService {
     data: object;
     translationMap?: object;
     keepId?: boolean;
-  }) => {
+  }) {
     if (!keepId && "id" in data) {
-      delete data.id;
+      delete data["id"];
     }
 
-    const result = {};
+    const result: any = {};
     for (const key in data) {
       if (internalKeys.includes(key)) {
         result[key] = data[key];
@@ -68,12 +73,12 @@ class PageTranslationService {
       }
 
       if (isString(data[key]) && translationMap[key]) {
-        result[key] = this.translateText(data[key]);
+        result[key] = await this.translateText(data[key]);
         continue;
       }
 
       if (isObject(data[key]) && translationMap[key]) {
-        result[key] = this.parseObject({
+        result[key] = await this.parseObject({
           data: data[key],
           translationMap: translationMap[key],
           keepId: keepIdKeys.includes(key.toLowerCase()),
@@ -82,7 +87,7 @@ class PageTranslationService {
       }
 
       if (isArray(data[key]) && translationMap[key]) {
-        result[key] = this.parseArray(data[key], translationMap[key]);
+        result[key] = await this.parseArray(data[key], translationMap[key]);
         continue;
       }
 
@@ -93,36 +98,30 @@ class PageTranslationService {
     }
 
     return result;
-  };
+  }
 
-  private parseArray = (data: any[], translationMap: object) => {
+  private async parseArray(data: any[], translationMap: object) {
     const result = [];
     for (const item of data) {
       if (isString(item)) {
-        result.push(this.translateText(item));
+        result.push(await this.translateText(item));
         continue;
       }
       if (isObject(item)) {
-        result.push(this.parseObject({ data: item, translationMap }));
+        result.push(await this.parseObject({ data: item, translationMap }));
         continue;
       }
 
       if (isArray(item)) {
-        result.push(this.parseArray(item, translationMap));
+        result.push(await this.parseArray(item, translationMap));
         continue;
       }
       result.push(item);
     }
     return result;
-  };
+  }
 
-  private removeIds = ({
-    data,
-    keepId,
-  }: {
-    data: unknown;
-    keepId?: boolean;
-  }) => {
+  private removeIds({ data, keepId }: { data: unknown; keepId?: boolean }) {
     if (keepId) {
       return data;
     }
@@ -136,9 +135,12 @@ class PageTranslationService {
     }
 
     return data;
-  };
+  }
 
-  private translateText = (text: string) => "[==] Yay! Translated [==]";
+  private async translateText(text: string): Promise<string> {
+    console.log(`Translating text: ${text}`);
+    return await this.translator.translate(text);
+  }
 }
 
 export { PageTranslationService };

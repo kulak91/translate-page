@@ -15,3 +15,8 @@ export { meta } from "./meta";
 export { bottomFormSection } from "./bottom-form-section";
 export { otherServicesSection } from "./other-services-section";
 export { videosSection } from "./videos-section";
+export { devSliderSection } from "./dev-slider-section";
+export { hiringStepsSection } from "./hiring-steps-section";
+export { developersLinksSection } from "./developers-links-section";
+export { techStackSection } from "./tech-stack-section";
+export { articlesSection } from "./articles-section";

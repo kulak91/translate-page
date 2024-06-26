@@ -1,11 +1,41 @@
 import { PageTemplateId } from "../../enums/enums";
-import { meta, servicesSection, welcomeSection } from "../sections";
+import {
+  servicesSection,
+  questionsSection,
+  whyBinarianSection,
+  welcomeFormSection,
+  callToActionSection,
+  caseStudiesSection,
+  customTextSection,
+  meta,
+  bottomFormSection,
+  videosSection,
+  articlesSection,
+  techStackSection,
+  hiringStepsSection,
+  developersLinksSection,
+  devSliderSection,
+} from "../sections";
+import { generateTranslationSchema } from "./helpers/helpers";
 
-const developersPage = {
+const developersPage = generateTranslationSchema({
   id: PageTemplateId.DEVELOPERS_PAGE,
   meta,
-  welcomeSection,
+  welcomeFormSection,
+  whyBinarianSection,
+  questionsSection,
   servicesSection,
-};
+  caseStudiesSection,
+  callToActionTop: callToActionSection,
+  callToActionBottom: callToActionSection,
+  videosSection,
+  customTextSection,
+  bottomFormSection,
+  articlesSection,
+  techStackSection,
+  hiringStepsSection,
+  developersLinksSection,
+  devSliderSection,
+});
 
 export { developersPage };
