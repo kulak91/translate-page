@@ -1,9 +1,9 @@
 import { components } from "../components";
 
-const CallToActionSection = {
+const callToActionSection = {
   title: true,
   subTitle: true,
   buttonText: true,
 };
 
-export { CallToActionSection };
+export { callToActionSection };
