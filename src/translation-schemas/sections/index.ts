@@ -1,4 +1,5 @@
 export { servicesSection } from "./services-section";
+<<<<<<< HEAD
 export { welcomeSection } from "./welcome-section";
 export { questionsSection } from "./questions-section";
 export { whyBinarianSection } from "./why-binarian-section";
@@ -15,3 +16,6 @@ export { meta } from "./meta";
 export { bottomFormSection } from "./bottom-form-section";
 export { otherServicesSection } from "./other-services-section";
 export { videosSection } from "./videos-section";
+=======
+export { welcomeSection } from './welcome-section';
+>>>>>>> main
