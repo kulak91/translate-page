@@ -9,50 +9,30 @@ const internalKeys = ["__component", "id", "pageTemplateId"];
 class PageTranslationService {
   constructor() {}
 
-<<<<<<< HEAD
-  public generateTranslation(landing: LandingPage) {
+  public generateTranslation(landing: PageData) {
     const output = this.parsePage(landing);
-=======
- public generateTranslation(landing: PageData) {
-  const output = this.parsePage(landing);
->>>>>>> main
 
     const jsonData = JSON.stringify(output, null, 4);
 
-<<<<<<< HEAD
-    const filePath = `./output-${landing.__component}.json`;
+    const content = landing.attributes.content[0];
+
+    const filePath = `./output-${content.__component}.json`;
     fs.writeFile(filePath, jsonData, { encoding: "utf-8" });
-=======
-  const content = landing.attributes.content[0];
-
-  const filePath = `./output-${content.__component}.json`;
-  fs.writeFile(filePath, jsonData, { encoding: 'utf-8' });
- }
-
- private parsePage(landing: PageData) {
-  const content = landing.attributes.content[0];
-
-  switch (content.__component) {
-    case PageTemplateId.SERVICE_PAGE:
-      return this.parseObject(landing, pageIdToTranslationKeys[PageTemplateId.SERVICE_PAGE]);
-    case PageTemplateId.TECHNOLOGY_PAGE:
-      return this.parseObject(landing, pageIdToTranslationKeys[PageTemplateId.TECHNOLOGY_PAGE]);
-    default:
-      return landing;
->>>>>>> main
   }
 
-  private parsePage(landing: LandingPage) {
-    switch (landing.__component) {
+  private parsePage(landing: PageData) {
+    const content = landing.attributes.content[0];
+
+    switch (content.__component) {
       case PageTemplateId.SERVICE_PAGE:
         return this.parseObject(
           landing,
           pageIdToTranslationKeys[PageTemplateId.SERVICE_PAGE]
         );
-      case PageTemplateId.DEVELOPERS_PAGE:
+      case PageTemplateId.TECHNOLOGY_PAGE:
         return this.parseObject(
           landing,
-          pageIdToTranslationKeys[PageTemplateId.DEVELOPERS_PAGE]
+          pageIdToTranslationKeys[PageTemplateId.TECHNOLOGY_PAGE]
         );
       default:
         return landing;

@@ -4,7 +4,7 @@ import { ServicesSection, WelcomeSection } from "../sections/sections";
 
 type TechnologyPageContent = {
   id: number;
-  __component: PageTemplateId.DEVELOPERS_PAGE;
+  __component: PageTemplateId.TECHNOLOGY_PAGE;
   meta: PageMeta;
   welcomeSection: WelcomeSection;
   servicesSection: ServicesSection;
