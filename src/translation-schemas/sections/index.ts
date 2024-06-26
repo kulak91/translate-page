@@ -4,7 +4,7 @@ export { questionsSection } from "./questions-section";
 export { whyBinarianSection } from "./why-binarian-section";
 export { welcomeFormSection } from "./welcome-form-section";
 export { tableSection } from "./table-section";
-export { CallToActionSection } from "./call-to-action-section";
+export { callToActionSection } from "./call-to-action-section";
 export { caseStudiesSection } from "./case-studies-section";
 export { industriesSction } from "./industries-section";
 export { targetSection } from "./target-section";
