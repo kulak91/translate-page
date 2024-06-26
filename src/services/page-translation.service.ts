@@ -1,6 +1,6 @@
 import { pageIdToTranslationKeys } from "../data/pages";
 import { PageTemplateId } from "../enums/enums";
-import { LandingPage } from "../types";
+import { LandingPageContent, PageData } from "../types";
 import { isArray, isObject, isString } from "../utils/utils";
 import fs from "node:fs/promises";
 
@@ -9,13 +9,37 @@ const internalKeys = ["__component", "id", "pageTemplateId"];
 class PageTranslationService {
   constructor() {}
 
+<<<<<<< HEAD
   public generateTranslation(landing: LandingPage) {
     const output = this.parsePage(landing);
+=======
+ public generateTranslation(landing: PageData) {
+  const output = this.parsePage(landing);
+>>>>>>> main
 
     const jsonData = JSON.stringify(output, null, 4);
 
+<<<<<<< HEAD
     const filePath = `./output-${landing.__component}.json`;
     fs.writeFile(filePath, jsonData, { encoding: "utf-8" });
+=======
+  const content = landing.attributes.content[0];
+
+  const filePath = `./output-${content.__component}.json`;
+  fs.writeFile(filePath, jsonData, { encoding: 'utf-8' });
+ }
+
+ private parsePage(landing: PageData) {
+  const content = landing.attributes.content[0];
+
+  switch (content.__component) {
+    case PageTemplateId.SERVICE_PAGE:
+      return this.parseObject(landing, pageIdToTranslationKeys[PageTemplateId.SERVICE_PAGE]);
+    case PageTemplateId.TECHNOLOGY_PAGE:
+      return this.parseObject(landing, pageIdToTranslationKeys[PageTemplateId.TECHNOLOGY_PAGE]);
+    default:
+      return landing;
+>>>>>>> main
   }
 
   private parsePage(landing: LandingPage) {

@@ -17,8 +17,9 @@ import {
   otherServicesSection,
   videosSection,
 } from "../sections";
+import { generatePageTemplate } from "./helpers/helpers";
 
-const servicePage = {
+const servicePage = generatePageTemplate({
   id: PageTemplateId.SERVICE_PAGE,
   meta,
   welcomeFormSection,
@@ -37,6 +38,6 @@ const servicePage = {
   bottomFormSection,
   otherServicesSection,
   awardsSection,
-} as const;
+});
 
 export { servicePage };
