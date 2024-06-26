@@ -1,1 +1,1 @@
-export { generatePageTemplate } from './generate-page-template.helper';
+export { generateTranslationSchema } from "./generate-translation-schema.helper";

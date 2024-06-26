@@ -17,9 +17,9 @@ import {
   otherServicesSection,
   videosSection,
 } from "../sections";
-import { generatePageTemplate } from "./helpers/helpers";
+import { generateTranslationSchema } from "./helpers/helpers";
 
-const servicePage = generatePageTemplate({
+const servicePage = generateTranslationSchema({
   id: PageTemplateId.SERVICE_PAGE,
   meta,
   welcomeFormSection,
