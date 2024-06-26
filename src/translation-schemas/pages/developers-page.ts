@@ -19,7 +19,7 @@ import {
 import { generateTranslationSchema } from "./helpers/helpers";
 
 const developersPage = generateTranslationSchema({
-  id: PageTemplateId.SERVICE_PAGE,
+  id: PageTemplateId.DEVELOPERS_PAGE,
   meta,
   welcomeFormSection,
   whyBinarianSection,

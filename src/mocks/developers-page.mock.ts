@@ -16,7 +16,7 @@ const mockDevelopersPage = {
           title: "Hire Dedicated Node.js Developers | Binary Studio",
           description:
             "Hire dedicated Node.js developers from Binary Studio ☑️ Expertise in scalable and high-performance apps ☑️ Trust our reliable dedicated Node.js developers",
-          keywords: null,
+          keywords: "key",
           noindex: false,
           nofollow: false,
           preloadImage: {
@@ -491,8 +491,55 @@ const mockDevelopersPage = {
             },
           ],
         },
-        developersLinksSection: null,
-        techStackSection: null,
+        developersLinksSection: {
+          id: 9,
+          title: "title",
+          subtitle: "sub",
+          priority: 0,
+          block: "developersLinks",
+          devLinks: [
+            {
+              id: 9,
+              category: "Frontend",
+              links: [
+                {
+                  id: 9,
+                  title: "CSS",
+                  link: "/",
+                },
+                {
+                  id: 10,
+                  title: "HTML",
+                  link: "/",
+                },
+              ],
+            },
+          ],
+        },
+        techStackSection: {
+          id: 9,
+          title: "title",
+          priority: 0,
+          block: "technologyStackLinks",
+          technologyCategories: [
+            {
+              id: 9,
+              category: "Backend",
+              technologies: [
+                {
+                  id: 30,
+                  title: "Node.js",
+                  link: "/",
+                },
+                {
+                  id: 31,
+                  title: "Laravel",
+                  link: "/",
+                },
+              ],
+            },
+          ],
+        },
         devSliderSection: {
           id: 3,
           title: "Our dedicated Node.js developers",
@@ -531,7 +578,30 @@ const mockDevelopersPage = {
             },
           ],
         },
-        articlesSection: null,
+        articlesSection: {
+          id: 2,
+          title: "title",
+          subtitle: "sub title",
+          priority: 0,
+          block: "articles",
+          articles: null,
+          articleList: [
+            {
+              id: 2,
+              article_id: "241",
+              title: "Tips for Accurate Software Cost Estimations",
+              image: {
+                data: {
+                  id: 1695,
+                  attributes: {
+                    name: "top_clutch.co_app_development_company_legal_2024.png",
+                    url: "/uploads/top_clutch_co_app_development_company_legal_2024_18263d0106.png",
+                  },
+                },
+              },
+            },
+          ],
+        },
       },
     ],
   },

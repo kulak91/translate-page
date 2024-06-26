@@ -1,7 +1,5 @@
-import { elements } from "../elements";
-
 const techStackList = {
-  technologies: elements.links,
+  category: true,
 };
 
 export { techStackList };
