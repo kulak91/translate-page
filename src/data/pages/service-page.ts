@@ -1,7 +1,8 @@
 import { PageTemplateId } from "../../enums/enums";
 import { servicesSection } from "../sections/services-section";
+import { generatePageTemplate } from './helpers/helpers';
 
-const servicePage = {
+const servicePage = generatePageTemplate({
   id: PageTemplateId.SERVICE_PAGE,
   meta: {
     title: true,
@@ -18,6 +19,6 @@ const servicePage = {
     otherServices: { title: true },
   }
 
-} as const;
+});
 
 export { servicePage };

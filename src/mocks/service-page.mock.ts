@@ -1,4 +1,14 @@
-const mockServicePage =
+import { PageData } from "../types";
+
+const mockServicePage =  {
+  "id": 21,
+  "attributes": {
+      "title": "Nearshore Software Development",
+      "slug": "nearshore-software-development",
+      "translatedPages": {
+          "data": []
+      },
+      "content": [
           {
               "id": 2,
               "__component": "shared.service-page",
@@ -1460,6 +1470,9 @@ const mockServicePage =
                   ]
               },
               "awardsSection": null
-          };
+          }
+      ]
+  }
+};
 
 export { mockServicePage };

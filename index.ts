@@ -1,6 +1,6 @@
 import { mockServicePage, mockTechnologyPage } from './src/mocks/mocks';
 import { PageTranslationService } from './src/services/page-translation.service';
-import { LandingPage } from './src/types';
+import { PageData } from './src/types';
 
 const landingArgId = process.argv[2];
 
@@ -8,4 +8,4 @@ const landing = landingArgId === '--service' ? mockServicePage : mockTechnologyP
 
 const pageTranslationService = new PageTranslationService();
 
-pageTranslationService.generateTranslation(landing as unknown as LandingPage);
+pageTranslationService.generateTranslation(landing as unknown as PageData);

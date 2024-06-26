@@ -1,4 +1,13 @@
-const mockTechnologyPage = {
+const mockTechnologyPage =   {
+  "id": 19,
+  "attributes": {
+      "title": "Programming Services",
+      "slug": "programming-services",
+      "translatedPages": {
+          "data": []
+      },
+      "content": [
+          {
               "id": 18,
               "__component": "shared.technology-page",
               "pageTemplateId": "technology",
@@ -503,6 +512,9 @@ const mockTechnologyPage = {
                       }
                   ]
               }
-          };
+          }
+      ]
+  }
+};
 
 export { mockTechnologyPage };

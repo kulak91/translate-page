@@ -1,6 +1,6 @@
-import { ServicePage } from "./service-page.type";
-import { TechnologyPage } from "./technology-page.type";
+import { ServicePageContent } from "./service-page-content.type";
+import { TechnologyPageContent } from "./technology-page-content.type";
 
-type LandingPage = ServicePage | TechnologyPage;
+type LandingPageContent = ServicePageContent | TechnologyPageContent;
 
-export { LandingPage };
+export { LandingPageContent };
