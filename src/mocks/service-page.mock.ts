@@ -1,5 +1,3 @@
-import { PageData } from "../types";
-
 const mockServicePage = {
   id: 21,
   attributes: {

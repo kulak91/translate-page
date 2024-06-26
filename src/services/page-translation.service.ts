@@ -36,6 +36,12 @@ class PageTranslationService {
           translationMap:
             pageIdToTranslationKeys[PageTemplateId.TECHNOLOGY_PAGE],
         });
+      case PageTemplateId.DEVELOPERS_PAGE:
+        return this.parseObject({
+          data: landing,
+          translationMap:
+            pageIdToTranslationKeys[PageTemplateId.DEVELOPERS_PAGE],
+        });
       default:
         return landing;
     }
