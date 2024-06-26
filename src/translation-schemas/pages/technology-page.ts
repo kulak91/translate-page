@@ -1,8 +1,8 @@
 import { PageTemplateId } from "../../enums/enums";
 import { servicesSection, welcomeSection } from "../sections";
-import { generatePageTemplate } from "./helpers/helpers";
+import { generateTranslationSchema } from "./helpers/helpers";
 
-const technologyPage = generatePageTemplate({
+const technologyPage = generateTranslationSchema({
   id: PageTemplateId.TECHNOLOGY_PAGE,
   meta: {
     title: true,

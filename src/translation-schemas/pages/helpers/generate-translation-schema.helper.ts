@@ -1,6 +1,6 @@
 import { PageContent } from "../../../types";
 
-const generatePageTemplate  = (content: PageContent) => ({
+const generateTranslationSchema  = (content: PageContent) => ({
   attributes: {
     title: true,
     slug: true,
@@ -8,4 +8,4 @@ const generatePageTemplate  = (content: PageContent) => ({
   }
 });
 
-export { generatePageTemplate };
+export { generateTranslationSchema };
