@@ -1,1 +1,1 @@
-export const isArray = (value: unknown): value is Array<any> => Array.isArray(value);
+export const isArray = <T>(value: unknown): value is Array<T> => Array.isArray(value);
