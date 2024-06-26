@@ -3,12 +3,12 @@ const welcomeSection = {
   webView: {
     firstLine: true,
     secondLine: {
-      word: true
+      word: true,
     },
     thirdLine: {
       word: true,
-    }
-  }
-}
+    },
+  },
+};
 
 export { welcomeSection };

@@ -1,6 +1,6 @@
 import { ServicePage } from "./service-page.type";
-import { TechnologyPage } from "./technology-page.type";
+import { DevelopersPage } from "./developers-page.type";
 
-type LandingPage = ServicePage | TechnologyPage;
+type LandingPage = ServicePage | DevelopersPage;
 
 export { LandingPage };
